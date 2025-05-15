@@ -17,7 +17,7 @@
 
     <header>
         <nav class="navbar sticky-top navbar-expand-lg py-lg-3 text-light shadow">
-            <div class="container">
+            <div class="container-xl">
                 <a class="navbar-brand fw-bold text-light" href="#">Coin wallet</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,6 +40,22 @@
 
                     </ul>
                     <form class="d-flex align-items-center gap-2">
+                        <!-- Avatar Dropdown in Header -->
+                        <div class="dropdown me-3">
+                            <a href="#"
+                                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-2" viewBox="0 0 24 24">
+                                <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2c-3.2 0-9.5 1.6-9.5 4.8V22h19v-3.2c0-3.2-6.3-4.8-9.5-4.8z"/>
+                                </svg>
+                                <span class="d-none d-md-inline"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end text-small shadow"
+                                aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </div>
                         <div class="nav-item dropdown">
                             <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -274,7 +290,8 @@
 
                     <div class="crypto-item mb-2 rounded-3 px-3 py-2 shadow d-flex align-items-center">
                         <div class="d-flex align-items-center"><span class="crypto-icon">MVX</span>
-                            <span>MultiversX</span></div>
+                            <span>MultiversX</span>
+                        </div>
                         <span class="ml-auto text-primary">up to 2.25%</span>
                     </div>
 
@@ -304,7 +321,8 @@
 
                     <div class="crypto-item mb-2 rounded-3 px-3 py-2 shadow d-flex align-items-center">
                         <div class="d-flex align-items-center"><span class="crypto-icon">CEL</span>
-                            <span>Celestia</span></div>
+                            <span>Celestia</span>
+                        </div>
                         <span class="ml-auto text-primary">up to 10%</span>
                     </div>
 
@@ -328,13 +346,15 @@
 
                     <div class="crypto-item mb-2 rounded-3 px-3 py-2 shadow d-flex align-items-center">
                         <div class="d-flex align-items-center"><span class="crypto-icon">CHAIN</span>
-                            <span>Chainflip</span></div>
+                            <span>Chainflip</span>
+                        </div>
                         <span class="ml-auto text-primary">up to 0.25%</span>
                     </div>
 
                     <div class="crypto-item mb-2 rounded-3 px-3 py-2 shadow d-flex align-items-center">
                         <div class="d-flex align-items-center"><span class="crypto-icon">DYM</span>
-                            <span>Dymension</span></div>
+                            <span>Dymension</span>
+                        </div>
                         <span class="ml-auto text-primary">up to 2%</span>
                     </div>
 
@@ -358,7 +378,8 @@
 
                     <div class="crypto-item mb-2 rounded-3 px-3 py-2 shadow d-flex align-items-center">
                         <div class="d-flex align-items-center"><span class="crypto-icon">CAPY</span>
-                            <span>Capybara</span></div>
+                            <span>Capybara</span>
+                        </div>
                         <span class="ml-auto text-primary">up to 30%</span>
                     </div>
 
@@ -514,7 +535,8 @@
             <div class="row gy-5">
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <div class="fs-1 text-light fw-bold text-center text-md-start">Make your crypto work for you</div>
-                    <p class="my-3 fs-5 text-center text-md-start">Keeping your funds secure is our priority as one of the world's most
+                    <p class="my-3 fs-5 text-center text-md-start">Keeping your funds secure is our priority as one of
+                        the world's most
                         regulated
                         platform in the industry.</p>
                     <a style="width: max-content !important;" href=""
@@ -529,9 +551,8 @@
     </div>
 
     <!-- footer start -->
-    <footer>
-        <footer class="footer border-top">
-            <div class="container-lg">
+   <footer class="footer ">
+            <div class="container-lg border-top">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
                         <div class="information">
@@ -577,25 +598,25 @@
 
                     </div>
                 </div>
-                 <div class="text-center border-top text-light mt-4 p-1 py-lg-3">
-                <div class="d-flex my-2 flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
-                    <p class="mb-0 fw-bold">© 2023 Coin Wallet ™ All Rights Reserved.</p>
-                    <div class="d-flex align-items-center">
-                        <a class="text-decoration-none text-light" href="http://">
-                            Privacy Policy
-                        </a>
-                        <span class=" px-3">|</span>
-                        <a class="text-decoration-none text-light" href="http://">
-                            Terms of Use
-                        </a>
+                <div class="text-center border-top text-light mt-4 p-1 py-lg-3">
+                    <div
+                        class="d-flex my-2 flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
+                        <p class="mb-0 fw-bold">© 2023 Coin Wallet ™ All Rights Reserved.</p>
+                        <div class="d-flex align-items-center">
+                            <a class="text-decoration-none text-light" href="http://">
+                                Privacy Policy
+                            </a>
+                            <span class=" px-3">|</span>
+                            <a class="text-decoration-none text-light" href="http://">
+                                Terms of Use
+                            </a>
 
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-           
+
         </footer>
-    </footer>
 
 </body>
 
