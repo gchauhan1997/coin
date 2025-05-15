@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="kpro-container-main">
+        <div class="kpro-container-main-inner">
+            <header>
+                <nav class="navbar sticky-top navbar-expand-lg py-lg-3 bg-body-tertiary border-bottom">
+                    <div class="container">
+                        <a class="navbar-brand fw-bold" href="#">Kpro Global</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold active" aria-current="page" href="#">Staking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Exchnage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Transaction History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Deposit/Withdrawal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Customer Service Center</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Message</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        username
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">My Information</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="py-3 py-lg-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="p-4 rounded-3 bg-white">
+                                <ul class="nav nav-pills flex-column nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item my-1" role="presentation">
+                                      <button class="nav-link w-100 fw-semibold active position-relative" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">공지사항</button>
+                                    </li>
+                                    <li class="nav-item my-1" role="presentation">
+                                      <button class="nav-link w-100  fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">1:1 문의하기</button>
+                                    </li>
+                                   
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="tab-content w-100" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="p-4 rounded-3 bg-white">
+                                        <h3 class="mb-3 pb-3 border-bottom">공지사항</h3>
+                                        <div class="bg-light p-4 rounded-3 my-3">
+                                            <input type="text" placeholder="Search" class="border rounded-2 p-2 w-100" id="">
+                                            <div class="overflow-x-auto py-3 my-3">
+                                                <table class="table border w-100">
+                                                    <thead>
+                                                        <tr class="">
+                                                            <th></th>
+                                                            <th>제목</th>
+                                                            <th>등록일</th>
+                                                            <th>조회수</th>
+                                                        </tr>
+                                                       
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>테이블 예시 제목 1</td>
+                                                            <td>2023-11-23</td>
+                                                            <td>100</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="p-4 rounded-3 bg-white">
+                                        <h3 class="mb-3 pb-3 border-bottom">1:1 문의하기</h3>
+                                        <div class="bg-light p-4 rounded-3 my-3">
+                                            
+                                            <div class="overflow-x-auto py-3">
+                                                <table class="table border w-100">
+                                                    <thead class="table-light">
+                                                        <tr class="">
+                                                            <th>상태</th>
+                                                            <th>처리상황</th>
+                                                            <th>내용</th>
+                                                            <th>문의날짜</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>테이블 예시 제목 1</td>
+                                                            <td>2023-11-23</td>
+                                                            <td>100</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <a href="" class="btn btn-lg btn-outline-secondary">1:1 문의작성</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                              </div>
+                           
+                           
+                        </div>
+                        
+                   </div>
+                </div>
+            </main>
+          
+            <!-- footer start -->
+            <footer>
+                <footer class="footer bg-light border-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="information">
+                                    <h6 class="footer-heading text-uppercase">
+                                        <a href="http://" class="text-black fw-bold text-decoration-none fs-4">Kpro Global</a>
+                                    </h6>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="resources">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Company</h6>
+                                    <ul class="list-unstyled footer-link mt-4">
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">About Us</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Announcement</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Terms of Use</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start">
+                                <div class="social">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Privacy Policy</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Protection Policy</a></li>
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Investment Terms and Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start">
+                                <div class="contact">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Customer Support</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Frequently Asked Questions FAQ</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">1:1 Inquiry</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Transaction Support Inquiries and Reports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center border-top text-black mt-4 p-1 py-lg-3">
+                        <div class="d-flex align-items-center justify-content-between container">
+                        <p class="mb-0 fw-bold">© 2023 Kpro Global ™ All Rights Reserved.</p>
+                        <p>icons</p>
+                        </div>
+                    </div>
+                </footer>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

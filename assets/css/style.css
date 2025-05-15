@@ -1,0 +1,308 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* font family */
+
+:root {
+    --primary-color: #1199FA;
+    --bs-primary-rgb: 29, 66, 137;
+    --bs-secondary-rgb: 106, 122, 137;
+    --secondary-color: #7ca8fd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common css */
+body {
+    padding: 0;
+    margin: 0;
+    color: rgb(244, 244, 244);
+    background-color: rgb(6, 17, 33);
+    min-height: 100vh;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.accordion-button {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.accordion-button::after {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    background-image: none !important;
+}
+
+.accordion-button.collapsed::after {
+    background-color: var(--bs-gray-300);
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+
+.form-label {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
+.primary-btn {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.secondary-btn {
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: transparent;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.secondary-btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.shadow-bottom {
+    box-shadow: 0px 15px 10px -15px var(--primary-color);
+}
+
+.back-btn-header a {
+    color: var(--primary-color);
+}
+
+.back-btn-header a:hover {
+    color: red;
+}
+
+select.form-select {
+    border-color: var(--primary-color);
+    height: 38px;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input .icon {
+    position: absolute;
+    color: var(--primary-color);
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input .password-icon {
+    position: absolute;
+    color: var(--primary-color);
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input input {
+    padding: 6px 8px 6px 36px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.form-input.password-filed input {
+    padding: 6px 36px 6px 36px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red !important;
+}
+
+.yellow {
+    color: yellow !important;
+}
+
+.blue {
+    color: var(--primary-color) !important;
+    padding: 0 2px;
+    background-color: #fff;
+    width: max-content;
+    border-radius: 5px;
+}
+
+
+/* modal */
+.modal input {
+    padding: 8px;
+    border: 1px solid #fff;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 150px;
+}
+
+input:focus-visible {
+    outline: 1px solid var(--primary-color);
+}
+
+/* modal */
+
+.video-box {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+marquee img {
+    width: auto;
+}
+
+.hero-image,
+.contact-box {
+    height: 100vh;
+}
+
+@media(max-width:1200px) {
+
+    .hero-image,
+    .contact-box,
+    .hero-image video {
+        height: 60vh;
+        text-align: center;
+        object-fit: cover;
+    }
+
+    .contact-box h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media(max-width:575px) {
+
+    .hero-image,
+    .contact-box,
+    .hero-image video {
+        height: 40vh;
+        text-align: center;
+        object-fit: cover;
+    }
+
+    .contact-box h1 {
+        font-size: 32px !important;
+    }
+
+    marquee img {
+        max-width: 150px;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+nav.navbar {
+    background-color: #0B1426 !important;
+    color: #F7F9FA !important;
+}
+
+.navbar .nav-link {
+    color: #e0eaf0 !important;
+}
+
+body {
+    padding-top: 73px;
+}
+
+@media(max-width:991px) {
+    body {
+        padding-top: 57px;
+    }
+}
+
+
+
+.crypto-item {
+    
+    border: 1px solid #2e2e31be;
+    background-color: #0B1426;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crypto-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    /* Adjust as needed */
+}

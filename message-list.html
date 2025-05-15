@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message-list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="kpro-container-main">
+        <div class="kpro-container-main-inner">
+            <header>
+                <nav class="navbar sticky-top navbar-expand-lg py-lg-3 bg-body-tertiary border-bottom">
+                    <div class="container">
+                        <a class="navbar-brand fw-bold" href="#">Kpro Global</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold active" aria-current="page" href="#">Staking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Exchnage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Transaction History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Deposit/Withdrawal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Customer Service Center</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Message</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        username
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">My Information</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="py-3 py-lg-5">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12">
+                            <div class="p-3 p-lg-5 rounded-3 shadow">
+                                <h3 class="mb-2 border-bottom pb-3 mb-5">Inbox</h3>
+                            <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link fs-6 active p-3 fw-semibold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">New message</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link fs-6 p-3 fw-semibold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">System Messages</button>
+                                </li>
+                                <li class="nav-item " role="presentation">
+                                  <button class="nav-link fs-6 p-3 fw-semibold" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Admin Message</button>
+                                </li>
+                                
+                              </ul>
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="overflow-x-auto">
+                                        <table class="table w-100 border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>종류</th>
+                                                    <th>종류제목</th>
+                                                    <th>날짜</th>
+                                                    <th>상태</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <nav aria-label="..." class="py-3 w-100 text-center">
+                                            <ul class="pagination justify-content-center">
+                                              <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item active">
+                                                <a class="page-link" href="#">2</span></a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="overflow-x-auto">
+                                        <table class="table w-100 border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>종류</th>
+                                                    <th>종류제목</th>
+                                                    <th>날짜</th>
+                                                    <th>상태</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <nav aria-label="..." class="py-3 w-100 text-center">
+                                            <ul class="pagination justify-content-center">
+                                              <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item active">
+                                                <a class="page-link" href="#">2</span></a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <div class="overflow-x-auto">
+                                        <table class="table w-100 border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>종류</th>
+                                                    <th>종류제목</th>
+                                                    <th>날짜</th>
+                                                    <th>상태</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                    <td>test</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <nav aria-label="..." class="py-3 w-100 text-center">
+                                            <ul class="pagination justify-content-center">
+                                              <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item active">
+                                                <a class="page-link" href="#">2</span></a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                        
+                   </div>
+                </div>
+            </main>
+          
+            <!-- footer start -->
+            <footer>
+                <footer class="footer bg-light border-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="information">
+                                    <h6 class="footer-heading text-uppercase">
+                                        <a href="http://" class="text-black fw-bold text-decoration-none fs-4">Kpro Global</a>
+                                    </h6>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="resources">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Company</h6>
+                                    <ul class="list-unstyled footer-link mt-4">
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">About Us</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Announcement</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Terms of Use</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start">
+                                <div class="social">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Privacy Policy</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Protection Policy</a></li>
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Investment Terms and Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start">
+                                <div class="contact">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Customer Support</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Frequently Asked Questions FAQ</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">1:1 Inquiry</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Transaction Support Inquiries and Reports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center border-top text-black mt-4 p-1 py-lg-3">
+                        <div class="d-flex align-items-center justify-content-between container">
+                        <p class="mb-0 fw-bold">© 2023 Kpro Global ™ All Rights Reserved.</p>
+                        <p>icons</p>
+                        </div>
+                    </div>
+                </footer>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

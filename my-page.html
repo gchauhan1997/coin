@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="kpro-container-main">
+        <div class="kpro-container-main-inner">
+            <header>
+                <nav class="navbar sticky-top navbar-expand-lg py-lg-3 bg-body-tertiary border-bottom">
+                    <div class="container">
+                        <a class="navbar-brand fw-bold" href="#">Kpro Global</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold active" aria-current="page" href="#">Staking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Exchnage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Transaction History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Deposit/Withdrawal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Customer Service Center</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-semibold" href="#">Message</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        username
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">My Information</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="shadow p-4 rounded-3 my-2 my-lg-5">
+                    <h3 class="mb-3 border-bottom pb-3">내 정보 수정</h3>
+                    <form action="">
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5 r fw-semibold">이름</div>
+                            <div class="col-md-10"><input type="text" value="테스트" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5 fw-semibold">휴대폰번호</div>
+                            <div class="col-md-10"><input type="number" value="02206654654" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">유저등급</div>
+                            <div class="col-md-10"><input type="text" value="test" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">비밀번호</div>
+                            <div class="col-md-10"><input type="password" value="test" class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">비밀번호 확인</div>
+                            <div class="col-md-10"><input type="password" value="test"  class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">예금주</div>
+                            <div class="col-md-10"><input type="text" value="test" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">은행</div>
+                            <div class="col-md-10"><input type="number" value="65654645" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">계좌번호</div>
+                            <div class="col-md-10"><input type="text" value="" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-md-2 fs-5  fw-semibold">추천코드</div>
+                            <div class="col-md-10"><input type="text" value="테스트" disabled class="px-3 py-2 w-100 border rounded-2"></div>
+                        </div>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="" class="btn-primary btn px-4 btn-lg">Edit</a>
+                            <a href="" class="btn-primary bg-dark px-4 btn-lg btn">Cancellation</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- footer start -->
+            <footer>
+                <footer class="footer bg-light border-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="information">
+                                    <h6 class="footer-heading text-uppercase">
+                                        <a href="http://" class="text-black fw-bold text-decoration-none fs-4">Kpro Global</a>
+                                    </h6>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
+                                <div class="resources">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Company</h6>
+                                    <ul class="list-unstyled footer-link mt-4">
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">About Us</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Announcement</a></li>
+                                        <li class="mb-1"><a href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none">Terms of Use</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start">
+                                <div class="social">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Privacy Policy</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Protection Policy</a></li>
+                                        <li class="list-inline-item"><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Investment Terms and Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start">
+                                <div class="contact">
+                                    <h6 class="footer-heading text-uppercase  text-black fw-bold">Customer Support</h6>
+                                    <ul class="list-inline my-4">
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black text-decoration-none mb-2">Frequently Asked Questions FAQ</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">1:1 Inquiry</a></li>
+                                        <li class=""><a
+                                                href="https://codepen.io/Gaurav-Rana-the-reactor"
+                                                class=" text-black mb-2 text-decoration-none">Transaction Support Inquiries and Reports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center border-top text-black mt-4 p-1 py-lg-3">
+                        <div class="d-flex align-items-center justify-content-between container">
+                        <p class="mb-0 fw-bold">© 2023 Kpro Global ™ All Rights Reserved.</p>
+                        <p>icons</p>
+                        </div>
+                    </div>
+                </footer>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
