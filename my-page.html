@@ -20,23 +20,38 @@
             <header>
                 <nav class="navbar sticky-top navbar-expand-lg py-lg-3 text-light shadow">
                     <div class="container-xl">
-                        <a class="navbar-brand fw-bold text-light" href="#">Coin wallet</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="nav-item dropdown bg-light text-dark rounded-2 d-lg-none">
+                                <a class="nav-link fw-semibold dropdown-toggle lang-btn p-2 text-dark" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="my-page.html">EN</a></li>
+                                    <li><a class="dropdown-item" href="#">Korean</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon text-light"></span>
+                            </button>
+                        </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
                                 <li class="nav-item">
                                     <a class="nav-link fw-semibold active" aria-current="page"
-                                        href="staking.html">Deposit/Withdrawal</a>
+                                        href="wallet-new.html">Deposit/Withdrawal</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-semibold" href="exchanges.html">Token Purchase</a>
+                                    <a class="nav-link fw-semibold" href="coin-status.html">Coin</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-semibold" href="my-transaction.html">Protective custody</a>
+                                    <a class="nav-link fw-semibold" href="term-cond.html">Terms</a>
                                 </li>
 
 
@@ -59,6 +74,7 @@
                                         <li><a class="dropdown-item" href="my-page.html">My Page</a></li>
                                         <li><a class="dropdown-item" href="login.html">Login</a></li>
                                         <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+
                                     </ul>
                                 </div>
                                 <div class="nav-item dropdown">
@@ -76,63 +92,84 @@
                     </div>
                 </nav>
             </header>
-            <!-- header -->
-            <div class="container">
-                <div class="shadow p-4 rounded-3 my-2 my-lg-5">
-                    <h3 class="mb-3 border-bottom pb-3">내 정보 수정</h3>
-                    <form action="">
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5 r fw-semibold">이름</div>
-                            <div class="col-md-10"><input type="text" value="테스트" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
+
+
+            <main>
+                <section class="my-3 py-3 py-lg-3 my-lg-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 ">
+                                <div class="card mx-lg-5">
+                                    <div class="card-header fs-6 fw-bold text-muted">
+                                        정보 관리 (Information Management)
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">이메일 (Email)</label>
+                                            <input type="email" class="form-control" id="email"
+                                                value="asdqwe123@naver.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">이름 (Name)</label>
+                                            <input type="text" class="form-control" id="name" value="김경수" readonly>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label d-block">비밀 번호 (Password)</label>
+                                            <a href="#" class="change-password-link btn btn-sm btn-primary ">비밀 번호 변경
+                                                (Change
+                                                Password)</a>
+                                        </div>
+
+                                        <div class="steps my-5">
+                                            <div class="wrapper">
+                                                <p class="fw-semibold mb-2 text-primary">Security Verification</p>
+                                                <ul class="StepProgress fw-semibold">
+                                                    <li class="StepProgress-item is-done mb-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                                            <span>1. 회원 가입 </span>
+
+                                                            <span
+                                                                class="status-badge status-badge-complete text-success">완료
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="StepProgress-item current mb-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                                            <span>2. 이름 등록 (Name Registration)</span>
+                                                            <span
+                                                                class="status-badge status-badge-incomplete text-danger">미등록
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="StepProgress-item mb-2">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                                            <span>3. 휴대폰 등록 (Phone Registration)</span>
+                                                            <span
+                                                                class="status-badge status-badge-incomplete text-danger">미등록
+                                                            </span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <p class="text-dark">
+                                            KYC (신분증 인증) 후 모든 서비스를 이용 할 수 있습니다. <br>
+                                            (You can use all services after KYC (ID verification).)
+                                        </p>
+                                        <button type="button" class="btn btn-primary">KYC (신분증 인증) 하기</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5 fw-semibold">휴대폰번호</div>
-                            <div class="col-md-10"><input type="number" value="02206654654" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">유저등급</div>
-                            <div class="col-md-10"><input type="text" value="test" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">비밀번호</div>
-                            <div class="col-md-10"><input type="password" value="test"
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">비밀번호 확인</div>
-                            <div class="col-md-10"><input type="password" value="test"
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">예금주</div>
-                            <div class="col-md-10"><input type="text" value="test" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">은행</div>
-                            <div class="col-md-10"><input type="number" value="65654645" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">계좌번호</div>
-                            <div class="col-md-10"><input type="text" value="" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-md-2 fs-5  fw-semibold">추천코드</div>
-                            <div class="col-md-10"><input type="text" value="테스트" disabled
-                                    class="px-3 py-2 w-100 border rounded-2"></div>
-                        </div>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="" class="btn-primary btn px-4 btn-lg">Edit</a>
-                            <a href="" class="btn-primary bg-dark px-4 btn-lg btn">Cancellation</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
+                    </div>
+                </section>
+            </main>
+
             <!-- footer start -->
             <footer class="footer ">
                 <div class="container-lg border-top">
@@ -140,14 +177,14 @@
                         <div class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start">
                             <div class="information">
                                 <h6 class="footer-heading text-uppercase">
-                                    <a href="http://" class="text-light fw-bold text-decoration-none fs-4">Coin
-                                        wallet</a>
+                                    <a href="http://" class="text-light fw-bold text-decoration-none fs-4"><img
+                                            class="logo" src="assets/img/logo.png" alt="" srcset=""></a>
                                 </h6>
 
                             </div>
                         </div>
                         <div class="col-12 my-3">
-                            <img src="assets/img/cyrptos.png" alt="icons">
+                            <img src="assets/img/cyrptos.png" alt="icons" class="footer-icon-img">
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -186,11 +223,11 @@
                             class="d-flex my-2 flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
                             <p class="mb-0 fw-bold">© 2023 Coin Wallet ™ All Rights Reserved.</p>
                             <div class="d-flex align-items-center">
-                                <a class="text-decoration-none text-light" href="http://">
+                                <a class="text-decoration-none text-light" href="term-cond.html">
                                     Privacy Policy
                                 </a>
                                 <span class=" px-3">|</span>
-                                <a class="text-decoration-none text-light" href="http://">
+                                <a class="text-decoration-none text-light" href="term-cond.html">
                                     Terms of Use
                                 </a>
 

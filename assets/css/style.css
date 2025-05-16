@@ -269,12 +269,18 @@ header {
     width: 100%;
     z-index: 99999;
 }
-
+a {
+    text-decoration: none;
+}
 nav.navbar {
     background-color: #0B1426 !important;
     color: #F7F9FA !important;
 }
-
+.logo { max-width: 150px; }
+.navbar-brand img { max-width: 120px;}
+.navbar .dropdown-toggle.lang-btn {
+    color: #000 !important;
+}
 .navbar .nav-link {
     color: #e0eaf0 !important;
 }
@@ -306,3 +312,6 @@ body {
     font-size: 1.5em;
     /* Adjust as needed */
 }
+.footer-icon-img {
+    min-height: 60px;
+object-fit: cover;}
