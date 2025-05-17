@@ -203,7 +203,7 @@ body {
 
 .nav__item.active .nav__item-icon {
     margin-top: -26px;
-    box-shadow: 0px 0px 16px 0px #4444;
+    box-shadow: 0px 0px 16px 0px #0072ff;
 }
 
 .nav__item.active .nav__item-text {
@@ -228,7 +228,7 @@ body {
     height: 46px;
     width: 46px;
     transition: margin-top 250ms ease-in-out, box-shadow 250ms ease-in-out;
-    color: #1d4289;
+    color: #038CE9;
 }
 
 .nav__item-text {
@@ -239,7 +239,7 @@ body {
     white-space: nowrap;
     font-weight: 600;
     font-size: 14px;
-    color: #1d4289;
+    color: #038CE9;
 }
 
 @media (max-width: 575px) {
