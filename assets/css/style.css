@@ -354,3 +354,8 @@ body {
     background: linear-gradient(to right, #0072ff, #00c6ff);
     /* reversed gradient on hover */
 }
+
+.modal .modal-content {
+    width: 95%;
+    margin: 0 auto;
+}
