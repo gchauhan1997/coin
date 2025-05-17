@@ -210,44 +210,13 @@
                                         <div class="steps my-5">
                                             <div class="wrapper">
                                                 <p class="fw-semibold mb-2 text-primary">Security Verification</p>
-                                                <ul class="StepProgress fw-semibold d-none">
-                                                    <li class="StepProgress-item is-done mb-2">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
-                                                            <span>1. 회원 가입 </span>
 
-                                                            <span
-                                                                class="status-badge status-badge-complete text-success">완료
-                                                            </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="StepProgress-item current mb-2">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
-                                                            <span>2. 이름 등록 (Name Registration)</span>
-                                                            <span
-                                                                class="status-badge status-badge-incomplete text-danger">미등록
-                                                            </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="StepProgress-item mb-2">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
-                                                            <span>3. 휴대폰 등록 (Phone Registration)</span>
-                                                            <span
-                                                                class="status-badge status-badge-incomplete text-danger">미등록
-                                                            </span>
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
                                                 <ul class="stepList fw-semibold">
                                                     <li class="stepList-item stepList-item--complete">
                                                         <div
                                                             class="d-flex align-items-center justify-content-between gap-2">
                                                             <span>회원 가입</span>
-                                                            <a href=""
-                                                                class="btn btn-sm gradient-blue primary-btn py-1">완료</a>
+                                                            <a href="" class="btn btn-sm gradient-blue  py-1">완료</a>
                                                         </div>
                                                     </li>
                                                     <li class="stepList-item stepList-item--complete">
@@ -255,8 +224,8 @@
                                                             class="d-flex align-items-center justify-content-between gap-2">
                                                             <span>이름 등록</span>
 
-                                                            <a href=""
-                                                                class="btn btn-sm gradient-blue primary-btn py-1">완료</a>
+                                                            <a data-bs-toggle="modal" data-bs-target="#modlarmodal"
+                                                                class="btn btn-sm gradient-blue  py-1">완료</a>
                                                         </div>
                                                     </li>
                                                     <li class="stepList-item stepList-item--active">
@@ -264,7 +233,8 @@
                                                             class="d-flex align-items-center justify-content-between gap-2">
                                                             <span>휴대폰 등록 </span>
 
-                                                            <a href="" class="btn btn-sm btn-danger py-1">미등록</a>
+                                                            <a data-bs-toggle="modal" data-bs-target="#smsmodal"
+                                                                class="btn btn-sm btn-danger py-1">미등록</a>
                                                         </div>
                                                     </li>
                                                     <li class="stepList-item  completed-step">Completed</li>
@@ -341,7 +311,7 @@
                     <div class="text-center border-top text-light mt-4 p-1 py-lg-3">
                         <div
                             class="d-flex my-2 flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
-                            <p class="mb-0 fw-bold">© 2023 Coin Wallet ™ All Rights Reserved.</p>
+                            <p class="mb-0 fw-bold">© 2025 Coin Wallet ™ All Rights Reserved.</p>
                             <div class="d-flex align-items-center">
                                 <a class="text-decoration-none text-light" href="term-cond.html">
                                     Privacy Policy
@@ -357,6 +327,96 @@
                 </div>
 
             </footer>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <!-- modlar Modal -->
+    <div class="modal fade" id="modlarmodal" tabindex="-1" aria-labelledby="modlarmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fw-semibold fs-6" id="modlarmodalLabel">Change Name</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="fw-semibold fs-6">You are changing your name.</h3>
+                    <p class="mt-1 text-secondary">If you are not the account holder, we may not be able to verify your
+                        identity when using services later.</p>
+                    <form class="mt-3">
+                        <div class="mb-0">
+                            <label for="exampleInputEmail1" class="form-label text-dark">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">You can change this name again after 7days.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+
+                    <button type="button" class="btn gradient-blue w-100 py-2 btn-sm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- sms verification Modal -->
+    <div class="modal fade" id="smsmodal" tabindex="-1" aria-labelledby="smsmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fw-semibold fs-6" id="modlarmodalLabel">Register Mobile Phone Number
+
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="fw-semibold fs-6">Please register your mobile phone number.
+                    </h3>
+                    <p class=" text-secondary">If you are not the account holder, service usage may be restricted.
+
+                    </p>
+                    <form class="mt-3">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-dark">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">You can change this name again after 7days.</div> -->
+                        </div>
+                        <div class="mb-2">
+                            <label for="phoneNumber" class="form-label text-dark">Mobile Phone Number</label>
+                            <div class="input-group">
+                                <select class="form-select" style="max-width: 120px;">
+                                    <option selected>+82 (KR)</option>
+                                    <option>+1 (US)</option>
+                                    <option>+44 (UK)</option>
+                                    <!-- Add more country codes as needed -->
+                                </select>
+                                <input type="text" class="form-control" id="phoneNumber"
+                                    placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="mb-2 text-end">
+                            <button type="button" class="btn btn-sm btn-primary gradient-blue p-2">Send Verification
+                                Code</button>
+                        </div>
+                         <div class="mb-0">
+                            <label for="exampleInputEmail1" class="form-label text-dark">Enter Otp</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">OTP Vaild only for 10mins</div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+
+                    <button type="button" class="btn gradient-blue w-100 py-2 btn-sm">Confirm</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- script -->
